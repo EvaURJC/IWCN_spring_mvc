@@ -4,8 +4,8 @@ $(document).on('click', '#boton', function() {
             return true;
         }
 	
-        else if( $("#codigo").val() == "") {
-	        $("#codigo").focus().after("<p> Minimo 1 caracter </p>");
+        else if( ($("#codigo").val() == "") && (!isNaN($('#codigo').val())) ) {
+	        $("#codigo").focus().after("<p> Minimo 1 numero sin letras </p>");
 	        return false;
 	    }
 
