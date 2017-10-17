@@ -4,9 +4,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Producto {
-
-//		public Producto() {
-//		}
 		
 		public String codigo;
 		
